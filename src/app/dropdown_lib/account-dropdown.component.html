@@ -1,0 +1,11 @@
+<!-- Single button -->
+<div class="btn-group" dropdown [(isOpen)]="status.isopen">
+    <button id="single-button" type="button" class="btn btn-default" dropdownToggle [disabled]="disabled">
+        Account<span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="single-button">
+        <li role="menuitem"><a class="drpdown-item" [routerLink]="['Profile']">Your Profile</a></li>
+        <li class="divider dropdown-divider"></li>
+        <li role="menuitem"><a class="dropdown-item" (click)="logout()" href="#">Logout</a></li>
+    </ul>
+</div>

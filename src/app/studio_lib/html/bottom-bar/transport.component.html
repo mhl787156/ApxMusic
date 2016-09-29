@@ -1,0 +1,70 @@
+<div class="btn-group" id="sidebar-bottombar-new-track">
+    <button type="button" class="btn-default btn" (click)="addTrackButton()">
+        Add Track
+    </button>
+   <!-- <chat [pid]="pid"></chat>-->
+</div>
+<div class="btn-group" id="sidebar-bottombar-new-track">
+
+</div>
+<div class="apx-transport-container" id="transport-control">
+    <div class="apx-transport-buttons">
+        <div class="apx-transport btn-group">
+
+            <button type="button" class="btn-default btn" aria-label="Step Backwards" (click)="stepBack()">
+                <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>
+            </button>
+
+            <button type="button" class="btn-default btn" aria-label="Rewind" (click)="rewind()">
+                <span class="glyphicon glyphicon-backward" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <div class="apx-transport btn-group">
+
+            <button type="button" class="btn-default btn btn-lg" aria-label="Play"
+                    *ngIf = "!buttonpressed.Play"
+                    (click)="play()">
+                <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+            </button>
+
+            <button type="button" class="btn-default btn btn-lg" aria-label="Pause"
+                   *ngIf = "buttonpressed.Play"
+                    (click)="pause()">
+                <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+            </button>
+
+            <button type="button" class="btn-default btn btn-lg" aria-label="Stop" (click)="stop()">
+                <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <div class="apx-transport btn-group">
+
+            <button type="button" class="btn-default btn" aria-label="Fast Forward" (click)="fastForward()">
+                <span class="glyphicon glyphicon-forward" aria-hidden="true"></span>
+            </button>
+
+            <button type="button" class="btn-default btn" aria-label="Step Forwards" (click)="stepForward()">
+                <span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span>
+            </button>
+
+        </div>
+    </div>
+
+    <div class="apx-transport-time" id="transport-time">
+        <input class='apx-time' type="time" [value]="getToneTransportPosition()" (input)="setToneTransportPosition($event.target.value)">
+    </div>
+
+</div>
+<div class="test"><chat [pid]="pid"></chat></div>
+
+<div class="btn-group" id="sidebar-bottombar-expand-control">
+
+    <button type="button" class="btn-default btn" (click)="minimiseBottom()">
+        <span class="glyphicon glyphicon-collapse-down"></span>
+    </button>
+    <button type="button" class="btn-default btn" (click)="minimiseSidebar()">
+        <span class="glyphicon glyphicon-expand"></span>
+    </button>
+</div>

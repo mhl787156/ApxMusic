@@ -1,0 +1,35 @@
+.apx-work-area {
+    float:left;
+    position: relative;
+    z-index: 0;
+    height:100%;
+    width:80%;
+    text-align: center;
+}
+
+.apx-track-settings{
+    float:left;
+    width: 200px;
+    height: 80%;
+    padding-top: 20px;
+    background-color: #333;
+    border: 1px none #ccc;
+    border-right-style: solid;
+}
+
+.apx-arrangement-area{
+    float:right;
+    width: calc(100% - 200px);
+    height: 80%;
+    background-color: #666;
+}
+
+.apx-function-area{
+    float: left;
+    height: 20%;
+    width: 100%;
+    position: relative;
+    border: 1px solid black;
+    background-color: #00cc38;
+}
+

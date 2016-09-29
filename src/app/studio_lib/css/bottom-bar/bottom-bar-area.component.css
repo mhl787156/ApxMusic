@@ -1,0 +1,9 @@
+.apx-bottom-toolbar {
+    position:relative;
+    z-index: 10;
+    height: 70px;
+    width:100%;
+    vertical-align: middle;
+    background-color: #CCCCCC;
+}
+

@@ -1,0 +1,41 @@
+.apx-sidebar {
+    float:right;
+    width: 20%;
+    height: 100%;
+    background-color: lightgray;
+    position: relative;
+    z-index: 5;
+    margin-bottom: 70px;
+}
+
+.apx-sidebar-nav {
+    height: 50px;
+    width:100%;
+}
+
+.apx-btn-group {
+    height: 100%;
+    width: 100%;
+}
+
+.apx-btn.active {
+    background-color: #DDDDDD;
+}
+
+.apx-btn {
+    border: 1px solid black;
+    height: 100%;
+    border-radius: 0;
+    background-color: #555555;
+}
+
+.apx-sidebar-main {
+    height: calc(100% - 50px);
+    border: 1px solid black;
+    margin: 2px;
+    padding: 5px;
+    overflow-y: scroll;
+}
+
+
+

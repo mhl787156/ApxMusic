@@ -1,0 +1,29 @@
+.navbar {
+  margin: 0;
+  background-color: #662d91;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #FFFFFF;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0.5);
+}
+
+.navbar-brand{
+  padding: 5px;
+  padding-left:15px;
+}
+
+.navbar-btn{
+  border: 1px solid #ffffff;
+}
+
+.navbar-btn:hover {
+  border: 1px solid #808080 !important;
+  background-color: #808080 !important;
+  color: #ccc;
+}
+
+img {
+  height: 40px;
+}
+
+

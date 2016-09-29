@@ -1,0 +1,12 @@
+
+/node_modules/
+/.idea/
+/npm-debug.log
+/built
+/typings
+
+*.DS_Store
+
+/server
+conf.toml
+*.exe

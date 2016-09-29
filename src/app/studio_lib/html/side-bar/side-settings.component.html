@@ -1,0 +1,63 @@
+<div class="sidebar-settings">
+    <h2>Settings</h2>
+
+    <div class="settings-unit">
+        <button class="btn btn-default" role="button" data-toggle="collapse" data-target="#project-settings">
+            Project Settings
+        </button>
+        <div id="project-settings" class="collapse" *ngIf="projectLoaded">
+            <h3>Project Settings</h3>
+            <!--  Project settings
+                    Name
+                    Author
+                    Invite/share
+                    Collaborators
+                    Other metadata as required -->
+            <p>Project Name: <input type="text" [(ngModel)]="project.name"></p>
+            <p>Owners: (Project Owners) <button type="button" class="btn btn-default">Change</button></p>
+            <p><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-share"></span>Invite Collaborators</button></p>
+            <div id="project-settings-collaborators">
+                Collaborators:
+                <ul>
+                    <li>Collaborator 1</li>
+                    <li>Collaborator 2</li>
+                </ul>
+            </div>
+            <input type="submit" value="Update" (click)="postProjectMetaToServer()">
+        </div>
+    </div>
+
+    <div class="settings-unit">
+        <button class="btn btn-default" role="button" data-toggle="collapse" data-target="#track-settings">
+            Track Settings
+        </button>
+        <div id="track-settings" class="collapse">
+            <!--  Track Settings
+                    Name
+                    Track length
+                    Instrument
+                        Settings for tonejs
+                    Mute/Solo
+                    Other metadata as required -->
+            <p>Selected Track: Track name <span class="glyphicon glyphicon-pencil"></span></p>
+            <p>Length: 4 units <span class="glyphicon glyphicon-pencil"></span></p>
+            <p>Instrument:
+                <select [(ngModel)]="instrument">
+                    <option value="piano">Piano</option>
+                    <option value="sine">Sine Wave</option>
+                    <option value="violin">Violin</option>
+                    <option value="electricPiano">Electric Piano</option>
+                    <option value="custom">Custom...</option>
+                </select>
+            </p>
+            <p [hidden]="!(instrument == 'custom')">
+                Custom instrument settings<br><em>(only show when Instrument above is set to custom)</em><br>
+                Forward this to tone.js for custom synth sound
+            </p>
+            <p>Mute Track: <input type="checkbox"></p>
+            <p>Solo Track: <input type="checkbox"></p>
+        </div>
+    </div>
+
+
+</div>

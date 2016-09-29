@@ -1,0 +1,71 @@
+.apx-transport-container {
+    display: table;
+    height: 100%;
+    width: 40%;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.apx-transport-buttons {
+    float: left;
+    width: 70%;
+    height: 100%;
+    display: table;
+    margin: 0 auto;
+    padding-top: 22px;
+}
+
+.apx-transport {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.apx-transport-time {
+    float: right;
+    width: 30%;
+    margin-top: 13px;
+}
+
+.apx-time {
+    border-radius: 10px;
+    width: 90%;
+    padding: 5px 10px 5px 10px;
+}
+
+.apx-lg-btn {
+    width: 45px !important;
+}
+
+.apx-transport > button {
+    padding-right: 25px;
+    width: 36px;
+    height: 75%;
+    position: relative;
+    top: 50%;
+    margin-top: -20px;
+    /*box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);*/
+}
+
+#sidebar-bottombar-new-track {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    margin: 20px;
+}
+
+#sidebar-bottombar-expand-control {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    margin: 20px;
+}
+
+.test {
+    position: absolute;
+    right: 400px;
+    top: 0;
+    height: 100%;
+    margin: 20px;
+}

@@ -1,0 +1,29 @@
+.arrangement-area {
+    width:100%;
+    height: 100%;
+    align-items: center;
+    text-align: left;
+    border: 1px solid;
+}
+
+.arrangement-area-canvas {
+
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    height: 100%;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+}
+
+button {
+
+}

@@ -1,0 +1,38 @@
+<div class="container-fluid">
+
+    <div class="row">
+
+        <div class="col-sm-3 col-md-2 sidebar">
+
+            <div class="nav  nav-sidebar-button ">
+                <a class="btn btn-default btn-dash btn-lg" (click)="newProject()">New Project</a>
+            </div>
+
+            <ul class="nav nav-sidebar">
+                <li><a [routerLink]="['Home']">Home</a></li>
+                <li><a>Ongoing Projects</a></li>
+                <li><a>My Projects</a></li>
+                <li><a>Friends' Projects</a></li>
+            </ul>
+
+            <br>
+
+            <ul class="nav nav-sidebar">
+                <li><a href="#">Starred</a></li>
+                <li><a href="#">Archived</a></li>
+                <li><a href="#">Binned</a></li>
+            </ul>
+
+        </div>
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+            <section class="dashboard">
+                <router-outlet></router-outlet>
+            </section>
+
+        </div>
+
+    </div>
+
+</div>

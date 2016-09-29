@@ -1,0 +1,26 @@
+<section class="container">
+    <div class="keyboard-container">
+        <img class="keyboard" src="built/app/img/PianoKeyboard.svg">
+    </div>
+    <div class="input-container">
+        <table >
+            <tr *ngFor="let i of numKeys">
+                <td *ngFor="let j of numFrames"
+                    class = "gridElement"
+                    (click)= "onGridClick(i, j, $event)"
+                    [ngClass]="{active: isClicked(i,j)}">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="keyboard-playbutton">
+        <button type="button" class="btn-default btn btn-lg" aria-label="Play" (click)="onPlayClick()">
+            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+        </button>
+    </div>
+    <div class="keyboard-stopbutton">
+        <button type="button" class="btn-default btn btn-lg" aria-label="Stop" (click)="onStopClick()">
+            <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+        </button>
+    </div>
+</section>
